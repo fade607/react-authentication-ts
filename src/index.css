@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 385;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" -6;
+}
+
+code {
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 385;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" -6;
+}
+
+* {
+  box-sizing: 0;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+:root {
+  --primary-color: #38c091;
+  --primary-hover-color: #2da179;
+  --app-background-color: #f9fafb;
+  --secondary-color: #a6e4ce;
+
+}
+
+.page-not-found {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.welcome-img {
+  height: 20vh;
+  object-fit: contain;
+}
+
+.page-not-found-img {
+  width: 40vw;
+  height: 55vh;
+  object-fit: contain;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 10px 0;
+  background-color: var(--primary-color);
+  color: #fff;
+  box-shadow: rgba(149, 165, 161, 0.2) 0px 8px 24px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--primary-hover-color);
+
+}
+
+.form-group {
+
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding: 5px;
+  margin-top: 10px;
+
+}
+
+.auth-page {
+  background-color: var(--app-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  block-size: 100vh;
+
+}
+
+.column {
+  flex-direction: column !important;
+}
+
+.mt-2 {
+  margin-block-start: 20px;
+}
+
+.mt-3 {
+  margin-block-start: 30px;
+}
+
+.mt-4 {
+  margin-block-start: 40px;
+}
+
+.large-size {
+  font-size: large;
+}
+
+.x-large-size {
+  font-size: x-large;
+}
+
+.mb-2 {
+  margin-bottom: 22px !important;
+}
+
+
+.red {
+  background-color: red;
+}
+
+.form-group>input {
+  border: 0.5px solid var(--secondary-color);
+  padding: 10px 5px;
+  border-radius: 5px;
+  inline-size: 100%;
+  margin: 5px 0 0 0;
+  outline: none;
+  background-color: #f9fafb;
+}
+
+
+.input-with-btn {
+  border: 0.5px solid var(--secondary-color);
+  border-radius: 5px;
+  inline-size: 100%;
+  margin: 5px 0 0 0;
+  outline: none;
+  background-color: #f9fafb;
+}
+
+.input-with-btn>input {
+  padding: 10px 5px;
+  border-radius: 5px;
+  inline-size: 100%;
+  outline: none;
+  background-color: #f9fafb;
+  border: none !important;
+}
+
+
+.send-otp-btn {
+  width: 100px;
+  height: 38px;
+  border: 0.5px solid var(--secondary-color);
+  border: none;
+  outline: none;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.send-otp-btn:disabled {
+  color: "#fff";
+  cursor: not-allowed;
+  background-color: #999;
+}
+
+.send-otp-btn:disabled:hover {
+  cursor: not-allowed;
+  background-color: #999;
+}
+
+.input-error {
+  border: 1px solid red !important;
+}
+
+.form-group>input:focus {
+  box-shadow: 0 0 5px var(--primary-color);
+  border: 0.5px solid var(--secondary-color) !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-1 {
+  gap: 10px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+
+.error-message {
+  inline-size: 100%;
+  font-size: 14px;
+  color: red;
+  margin-top: 5px;
+}
+
+.small-size {
+  font-size: 14px;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.small-text{
+  font-size: 12px;
+}
+
+.send-otp-btn:hover {
+  cursor: pointer;
+  background-color: var(--primary-hover-color);
+}
+
+.form-style {
+  background-color: #fff;
+  padding: 30px 30px;
+  flex-direction: column;
+  border-radius: 10px;
+  border: none;
+  box-shadow: var(--primary-color) 1px 0.1px 5px;
+
+  inline-size: 24vw;
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .form-style {
+    inline-size: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 950px) {
+  .form-style {
+    inline-size: 80%;
+  }
+}
